@@ -1,10 +1,13 @@
-import { BrowserRouter as Router} from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
+import logo from '../assets/NSBE-logo-white.png'
 
 function NavBar() {
     return (
     <div className="navbar">
-      <Router>
+      <div  className='logo'>
+        <img src={logo} alt="" width="50" className='logo-img'/>
+      </div>
+      <div className='optionsNavigation'>
         <Link to="#homepage">
           Home
         </Link>
@@ -12,13 +15,12 @@ function NavBar() {
           About Us
         </Link>
         <Link to="#faq">
-          About Us
+          FAQ
         </Link>
         <Link to="#sponsors">
           Sponsors
         </Link>
-
-    </Router>
+      </div>
     </div>
     )
 }

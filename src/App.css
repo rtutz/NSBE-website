@@ -10,9 +10,23 @@ body {
 }
 
 .navbar {
-  background-color: red;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline;
+  height: 100%;
+}
+
+
+.optionsNavigation {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; /* Adjust the value as needed */
 }
 
 /* #root {
