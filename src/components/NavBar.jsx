@@ -6,7 +6,7 @@ function NavBar() {
     return (
     <div className="navbar">
       <div  className='logo'>
-        {/* <img src={logo} alt="" className='logo-img'/> */}
+        <img src={logo} alt="" className='logo-img'/>
       </div>
       <div className='optionsNavigation'>
         <Link to="#homepage">

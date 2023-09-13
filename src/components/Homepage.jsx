@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 
-import data from '../assets/lottie_geographic.json';
+import data from '../assets/lottie_geographic_white.json';
 import ModernButton from "./ModernButton";
 
 function Homepage() {
