@@ -14,8 +14,8 @@ function Homepage() {
 
 
         <div id="#homepage" className="homepage flex justify-between">
-             <div className="textBanner text-4xl">
-                Homepage
+             <div className="textBanner text-4xl font-sans font-bold">
+                NSBEHacks
              </div>
             <div> 
                 <Lottie animationData={data} style={style}/>
