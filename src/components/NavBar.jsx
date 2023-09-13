@@ -23,10 +23,7 @@ function NavBar() {
         </Link>
       </div>
       <div className='MLHLogoAndApply flex'>
-        <div className='applyButton flex items-center'>
-          Apply Now
-        </div>
-        <div id="mlh-logo">
+        <div id="mlhLogo" className='mr-5'>
           <img src={mlhLogo} alt="" className='logo-img' id='mlh-logo-img' />
         </div>
 

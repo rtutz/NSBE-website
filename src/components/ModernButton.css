@@ -1,0 +1,22 @@
+/* ModernButton.css */
+
+.modern-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #64ffda;
+    color: #64ffda;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .modern-button:hover {
+    background-color: #64ffda;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  /* Add any additional styles you need here */
+  
