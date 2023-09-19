@@ -13,9 +13,9 @@ function App() {
       <Router>
         <NavBar/>
         <Homepage/>
-        <About/>
+        {/* <About/>
         <Faq/>
-        <Sponsors/>
+        <Sponsors/> */}
       </Router>
     </>
   )

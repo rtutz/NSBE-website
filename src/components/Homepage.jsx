@@ -5,14 +5,11 @@ import ModernButton from "./ModernButton";
 
 function Homepage() {
     const style = {
-        height: 2000,
+        height: 700
       };
 
     return (
         <>
-        {/* Added empty div to push down homepage and respect header*/}
-    
-
         <div id="#homepage" className="homepage flex justify-between items-center mt-20 mx-10">
             <div className="flex flex-col">
                 <div className="text-8xl font-sans font-bold text-palette-200">
@@ -29,7 +26,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <div> 
+            <div className=""> 
                 <Lottie animationData={data} style={style}/>
             </div>
         </div>
