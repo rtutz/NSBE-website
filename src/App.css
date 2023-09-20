@@ -8,6 +8,9 @@ body {
   background-color: #0A192F;
   color: white;
 
+  /* REMOVE THIS LATER ONCE ADDING OTHER PARTS */
+  overflow: hidden;
+
   /* To ensure that the homepage is the right size */
   display: flex;
   flex-direction: column;

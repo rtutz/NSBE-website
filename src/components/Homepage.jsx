@@ -1,7 +1,10 @@
 import Lottie from "lottie-react";
 
 import data from '../assets/lottie_geographic_white.json';
-import ModernButton from "./ModernButton";
+import {ModernButton, ModernButtonInverted} from "./ModernButton";
+
+const googleFormToJoinUs = "https://forms.gle/h1Ms17KdGcVMfDaA9"
+const googleFormToSponsorUs = "https://forms.gle/84VPTGf7CRSLX7M66"
 
 function Homepage() {
     const style = {
@@ -21,8 +24,10 @@ function Homepage() {
                 <div className="flex flex-col mt-5 first-letter:font-sans text-palette-400 font-semibold">
                     <span className="font-thin tracking-wider">Toronto, Ontario</span>
                     <span className="font-thin tracking-wider mt-1">October 25-27, <span className="text-palette-100 font-thin tracking-wider">2023</span></span>
-                    <div className="mt-8">
-                        <ModernButton text={"Join Us"} />
+                    <div className="mt-8 flex gap-9">
+                        <ModernButton text={"Join Us"} link={googleFormToJoinUs} />
+
+                        <ModernButtonInverted text={"Sponsor Us"} link={googleFormToSponsorUs} />
                     </div>
                 </div>
             </div>

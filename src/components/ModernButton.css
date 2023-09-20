@@ -12,11 +12,30 @@
     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
   }
   
-  .modern-button:hover {
-    background-color: #64ffda;
-    color: #fff;
+.modern-button:hover {
+  background-color: #64ffda;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.modern-button-inverted {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  background-color: #64ffda; /* Black background color */
+  border: 2px solid #64ffda; /* Black border to match background */
+  color: #0a192f; /* Blue text color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.modern-button-inverted:hover {
+    /* background-color: transparent;
+    color: #64ffda;  */
     transform: translateY(-2px);
-  }
+}
+
   
   /* Add any additional styles you need here */
   

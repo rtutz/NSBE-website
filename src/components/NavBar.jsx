@@ -8,7 +8,7 @@ function NavBar() {
       <div  className='logo'>
         <img src={logo} alt="" className='logo-img'/>
       </div>
-      <div className='optionsNavigation'>
+      <div className='optionsNavigation text-palette-800'>
         <Link to="#homepage">
           Home
         </Link>
@@ -23,7 +23,7 @@ function NavBar() {
         </Link>
       </div>
       <div className='MLHLogoAndApply flex'>
-        <div id="mlhLogo" className='mr-5'>
+        <div id="mlhLogo" className='mr-5 hidden'>
           <img src={mlhLogo} alt="" className='logo-img' id='mlh-logo-img' />
         </div>
 
