@@ -11,8 +11,8 @@ export default {
     extend: {
       colors: {
         'palette': {
-          100: '#64ffda',
-          200: '#e6f1ff',
+          100: '#f2ac7d',
+          200: '#f2ac7d',
           300: '#ccd6f6',
           400: '#a8b2d1',
           500: '#8892b0',

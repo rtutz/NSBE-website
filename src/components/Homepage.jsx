@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 
-import data from '../assets/lottie_geographic_white.json';
+import data from '../assets/lottie_geographic_orange.json';
 import {ModernButton, ModernButtonInverted} from "./ModernButton";
 
 const googleFormToJoinUs = "https://forms.gle/h1Ms17KdGcVMfDaA9"
