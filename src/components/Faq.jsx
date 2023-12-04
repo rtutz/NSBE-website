@@ -4,16 +4,18 @@ import ContactUs from "./ContactUs";
 
 function Faq() {
     return (
-    <div className="min-h-screen flex flex-col items-center py-30 w-4/5 mx-auto">
-        <TypeAnimation
-            wrapper={"div"}
-            sequence={['FREQUENTLY ASKED QUESTIIONS', 500]}
-            cursor={false}
-            speed={1}
-            style={{ fontSize: '2rem', fontWeight: '900'}}
-            repeat={0}
-            className="type"
-        />
+    <div id="faq" className="min-h-screen flex flex-col items-center justify-center py-30 w-4/5 mx-auto">
+        <div className=" mt-20">
+            <TypeAnimation
+                wrapper={"div"}
+                sequence={['FREQUENTLY ASKED QUESTIIONS', 500]}
+                cursor={false}
+                speed={1}
+                style={{ fontSize: '2rem', fontWeight: '900'}}
+                repeat={0}
+                className="type"
+            />
+        </div>
       <div id="accordion" className="grid grid-cols-2 items-start gap-4 w-full p-4 mt-4">
         
             <div>

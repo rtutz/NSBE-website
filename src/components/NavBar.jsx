@@ -1,4 +1,4 @@
-import { HashLink as Link } from 'react-router-hash-link'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import logo from '../assets/nsbe-logo.png';
 import mlhLogo from '../assets/mlh-trust-badge-white-2024.png';
 import { useState } from 'react';
@@ -25,18 +25,50 @@ function NavBar() {
 
     </div>
     <div className='optionsNavigation text-palette-400'>
-      <Link to="#homepage" onClick={() => handleClick("homepage")}>
+      <ScrollLink
+        to="homepage"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        onClick={() => handleClick("homepage")}
+      >
         <p className={getLinkStyle("homepage")}>Home</p>
-      </Link>
-      <Link to="#about" onClick={() => handleClick("about")}>
+      </ScrollLink>
+
+      <ScrollLink
+        to="about"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        onClick={() => handleClick("about")}
+      >
         <p className={getLinkStyle("about")}>About Us</p>
-      </Link>
-      <Link to="#faq" onClick={() => handleClick("faq")}>
+      </ScrollLink>
+
+      <ScrollLink
+        to="faq"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        onClick={() => handleClick("faq")}
+      >
         <p className={getLinkStyle("faq")}>FAQ</p>
-      </Link>
-      <Link to="#sponsors" onClick={() => handleClick("sponsors")}>
+      </ScrollLink>
+
+      {/* Uncomment the section below if you want a Sponsors link */}
+      {/* <ScrollLink
+        to="sponsors"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        onClick={() => handleClick("sponsors")}
+      >
         <p className={getLinkStyle("sponsors")}>Sponsors</p>
-      </Link>
+      </ScrollLink> */}
     </div>
     <div className='MLHLogoAndApply flex'>
       <div id="mlhLogo" className='mr-5'>

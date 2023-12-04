@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Statistics from './Statistics';
 function About() {
     return (
-      <div className="flex min-h-screen flex-col items-center py-30 About">
+      <div id="about" className="flex min-h-screen flex-col items-center justify-center py-30 About">
             <TypeAnimation
                     wrapper={"div"}
                     sequence={['About Us', 500]}
