@@ -9,8 +9,6 @@ body {
   background-color: #2F203D;
   color: white;
 
-  /* REMOVE THIS LATER ONCE ADDING OTHER PARTS */
-  overflow: hidden;
 
   /* To ensure that the homepage is the right size */
   display: flex;
