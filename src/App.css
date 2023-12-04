@@ -81,3 +81,10 @@ img {
 .about-us-banner-img {
   width: 28rem;
 }
+
+.About {
+  background-image: url(hexagon-data);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
