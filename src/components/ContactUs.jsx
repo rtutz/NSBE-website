@@ -11,15 +11,21 @@ function ContactUs() {
                 Get In Touch
             </div>
             <div className="font-sans  text-center mt-8 w-2/5">
-            Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+            
+Got questions, cool ideas, or just want to chat? We're all ears! Whether it's a tech glitch or you're unsure about team stuff, hit us up. Our virtual door is always open. Shoot us an email, drop a message, or slide into our DMs—we're here for you. Let's make this hackathon experience awesome together!
             </div>
-            <div className="flex justify-around w-1/5 mt-8">
-            <FontAwesomeIcon color='#f2ac7d' icon={faInstagram} size='2xl' />
-            <FontAwesomeIcon color='#f2ac7d' icon={faLinkedin}  size='2xl'/>
-            <FontAwesomeIcon color='#f2ac7d' icon={faEnvelope}  size='2xl'/>
+            <div className="flex justify-around w-1/5 mt-8 mb-8">
+            <a href="https://www.instagram.com/nsbehacks_uoft/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon className='icon' color='#f2ac7d' icon={faInstagram} size='2xl' />
+            </a>
+            <a href="https://www.linkedin.com/company/nsbehacks-uoft/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon className='icon' color='#f2ac7d' icon={faLinkedin}  size='2xl'/></a>
+            <FontAwesomeIcon className='icon' color='#f2ac7d' icon={faEnvelope}  size='2xl'/>
             </div>
         </div>
     )
+
+    
 
 }
 

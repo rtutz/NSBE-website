@@ -1,5 +1,5 @@
 import { HashLink as Link } from 'react-router-hash-link'
-import logo from '../assets/NSBE-logo-white.png';
+import logo from '../assets/nsbe-logo.png';
 import mlhLogo from '../assets/mlh-trust-badge-white-2024.png';
 import { useState } from 'react';
 
@@ -21,7 +21,8 @@ function NavBar() {
   return (
   <div className="navbar">
     <div  className='logo'>
-      <img src={logo} alt="" className='logo-img'/>
+    <img src={logo} alt="" className='logo-img' style={{ maxWidth: '20rem', maxHeight: '20rem' }} />
+
     </div>
     <div className='optionsNavigation text-palette-400'>
       <Link to="#homepage" onClick={() => handleClick("homepage")}>

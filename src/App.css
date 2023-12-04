@@ -104,6 +104,10 @@ img {
   padding: 0;
 }
 
-.gridstyle {
-  align-self: start;
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1) translateY(-10px);
 }
