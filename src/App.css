@@ -7,7 +7,7 @@
 body {
   /* background-color: #0A192F; */
   background-color: #2F203D;
-  color: white;
+  color: #F5F5F5;
 
 
   /* To ensure that the homepage is the right size */
@@ -99,7 +99,7 @@ img {
 .hr {
   height: 0.5rem;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #f2ac7d;
   margin: 1em 0;
   padding: 0;
 }

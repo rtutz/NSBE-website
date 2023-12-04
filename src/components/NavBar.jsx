@@ -12,7 +12,7 @@ function NavBar() {
 
   const getLinkStyle = (link) => {
     if (activeLink === link) {
-      return 'border-b-2 border-palette-100 text-white';
+      return 'border-b-2 border-palette-100 text-palette-800';
     } else {
       return 'hover:border-b-2 hover:border-palette-100 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110';
     }

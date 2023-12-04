@@ -18,7 +18,7 @@ function Homepage() {
             <div className="text-6xl md:text-8xl font-sans font-bold text-palette-200">
                 <h2 className="hero glitch layers" data-text="NSBEHacks"><span>NSBEHacks</span></h2>
             </div>
-            <div className="mt-3 text-xl font-sans font-bold">
+            <div className="mt-3 text-xl font-sans font-bold text-palette-800">
                 The first student-run <span className="text-palette-100 text-xl font-sans font-bold">black hackathon</span> in the GTA
             </div>
             <div className="flex flex-col mt-5 first-letter:font-sans text-palette-400 font-semibold">

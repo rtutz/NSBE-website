@@ -2,33 +2,6 @@
 import { useSpring, animated, useTransition } from 'react-spring';
 import { useState } from 'react';
 
-// function FaqCard({question, answer}) {
-//     const [open, setOpen] = useState(false);
-
-//     const contentProps = useSpring({
-//         maxHeight: open ? '1000px' : '0px', // set max height instead of height
-//     });
-
-//     const hrProps = useSpring({
-//         width: open ? '100%' : '0%',
-//         backgroundColor: open ? '#ccc' : 'transparent',
-//     });
-
-//     return (
-//         <div className="py-2 px-4 flex flex-col rounded-lg" 
-//           onClick={() => setOpen(open => !open)}>
-//             <div id="header" className="flex text-xl items-center">
-//                 <span className="text-4xl mr-8 text-palette-200">+</span> {question}
-//             </div>
-//             <animated.div className="hr" style={hrProps}></animated.div>
-//             <animated.div id="content" style={contentProps}>
-//                 {answer}
-//             </animated.div>
-          
-//         </div>
-//     );
-// }
-
 function FaqCard({question, answer}) {
     const [open, setOpen] = useState(false);
     const animateHr = useSpring({ 
@@ -45,13 +18,13 @@ function FaqCard({question, answer}) {
     });
 
     return ( 
-        <div onClick={() => setOpen(!open)} className="flex flex-col mb-0">
+        <div onClick={() => setOpen(!open)} className="flex flex-col mb-10">
             <div id="header" className="flex text-xl py-1 px-4 justify-between">
                 {question}
                 <animated.div style={iconProps}>
       { open 
-         ? <div className='text-palette-200 text-3xl'> - </div>
-         : <div className='text-palette-200 text-3xl'> + </div>
+         ? <div className='text-palette-100 text-3xl'> - </div>
+         : <div className='text-palette-100 text-3xl'> + </div>
       }
     </animated.div>
             </div>
