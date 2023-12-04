@@ -3,7 +3,7 @@ import Lottie from "lottie-react";
 import data from '../assets/lottie_geographic_orange.json';
 import {ModernButton, ModernButtonInverted} from "./ModernButton";
 
-const googleFormToJoinUs = "https://forms.gle/h1Ms17KdGcVMfDaA9"
+const googleFormToJoinUs = "https://form.typeform.com/to/CIqjra2H"
 const googleFormToSponsorUs = "https://forms.gle/84VPTGf7CRSLX7M66"
 
 function Homepage() {
@@ -23,10 +23,13 @@ function Homepage() {
             </div>
             <div className="flex flex-col mt-5 first-letter:font-sans text-palette-400 font-semibold">
                 <span className="font-thin tracking-wider">Toronto, Ontario</span>
-                <span className="font-thin tracking-wider mt-1">February 17 - 18, <span className="text-palette-100 font-thin tracking-wider">2024</span></span>
+                <span className="font-thin tracking-wider mt-1">February 24 - 24, <span className="text-palette-100 font-thin tracking-wider">2024</span></span>
                 <div className="mt-8 flex flex-col md:flex-row md:justify-left md:items-center gap-4 md:gap-9">
-                    <ModernButton text={"Join Us"} link={googleFormToJoinUs} />
-                    <ModernButtonInverted text={"Sponsor Us"} link={googleFormToSponsorUs} />
+                    <ModernButton text={"Register Now"} link={googleFormToJoinUs} />
+                    <ModernButtonInverted 
+  text={"Sponsor Us"} 
+  link={"mailto:hello@nsbehacksuoft.ca"} 
+/>
                 </div>
 
             </div>
