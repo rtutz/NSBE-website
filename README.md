@@ -1,8 +1,18 @@
-# React + Vite
+# NSBEHacks 2024 Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official repository for the 2024 NSBEHacks Website!
 
-Currently, two official plugins are available:
+## Status
+🚧 **Work in Progress** 🚧
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website is currently under development, and we appreciate your patience as we work on bringing you an amazing experience. 
+
+The most recent version can be viewed at [https://rtutz.github.io/NSBE-website/](https://rtutz.github.io/NSBE-website/).
+
+## About NSBEHacks
+NSBEHacks if National Society for Black Engineers (NSBE) UofT Chapter's annual hackathon, bringing together students, professionals, and enthusiasts passionate about technology, innovation, and diversity in STEM.
+
+Stay tuned for updates and exciting features as we continue to build and enhance the NSBEHacks 2024 Website!
+
+
+Thank you for your support!
