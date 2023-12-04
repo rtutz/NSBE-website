@@ -2,6 +2,8 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import logo from '../assets/nsbe-logo.png';
 import mlhLogo from '../assets/mlh-trust-badge-white-2024.png';
 import { useState } from 'react';
+import { slide as Menu } from "react-burger-menu";
+// import { useWindowDimensions } from "./useWindowDimensions.js";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("homepage");

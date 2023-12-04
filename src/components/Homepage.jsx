@@ -4,7 +4,6 @@ import data from '../assets/lottie_geographic_orange.json';
 import {ModernButton, ModernButtonInverted} from "./ModernButton";
 
 const googleFormToJoinUs = "https://form.typeform.com/to/CIqjra2H"
-const googleFormToSponsorUs = "https://forms.gle/84VPTGf7CRSLX7M66"
 
 function Homepage() {
     const style = {
