@@ -35,6 +35,10 @@ body {
 
 }
 
+.about-us-banner-img {
+  width: 40rem;
+}
+
 
 .optionsNavigation {
   width: 40%;
@@ -72,4 +76,8 @@ img {
   50% {
     opacity: 0;
   }
+}
+
+.about-us-banner-img {
+  width: 28rem;
 }
