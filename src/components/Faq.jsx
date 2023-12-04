@@ -2,31 +2,9 @@ import FaqCard from "./FAQcard";
 import { TypeAnimation } from 'react-type-animation';
 import ContactUs from "./ContactUs";
 
-// function Faq() {
-//     return (
-//     <div className="flex h-screen flex-col items-center">
-//         <TypeAnimation
-//             wrapper={"div"}
-//             sequence={['FREQUENTLY ASKED QUESTIIONS', 500]}
-//             cursor={false}
-//             speed={1}
-//             style={{ fontSize: '2rem', fontWeight: '900'}}
-//             repeat={0}
-//             className="type"
-//         />
-//         <div id="accordion">
-//             <FaqCard question={"Hello"}/>
-
-//         </div>
-
-      
-//     </div>
-//     )
-// }
-
 function Faq() {
     return (
-    <div className="min-h-screen flex flex-col items-center py-30">
+    <div className="min-h-screen flex flex-col items-center py-30 w-4/5 mx-auto">
         <TypeAnimation
             wrapper={"div"}
             sequence={['FREQUENTLY ASKED QUESTIIONS', 500]}

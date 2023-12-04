@@ -1,4 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
+import Statistics from './Statistics';
 function About() {
     return (
       <div className="flex min-h-screen flex-col items-center py-30 About">
@@ -17,8 +18,7 @@ function About() {
 
 With more than 600 chapters and more than 24,000 active members in the U.S. and abroad, NSBE’s mission is “to increase the number of culturally responsible black engineers who excel academically, succeed professionally and positively impact the community.
             </div>
-
-      
+            <Statistics/>
           </div>
 
     )

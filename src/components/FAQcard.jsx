@@ -31,8 +31,8 @@ function FaqCard({question, answer}) {
             {open && <animated.div style={animateHr} className="hr"></animated.div>}
                
             {contentTransition((style, item) =>
-                item ? <animated.div style={style} id="content">{answer}</animated.div> : null
-            )}
+    item ? <animated.div style={{...style, color: '#a8b2d1'}} id="content">{answer}</animated.div> : null
+)}
         </div>
     );
 }
