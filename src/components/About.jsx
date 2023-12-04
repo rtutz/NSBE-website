@@ -1,8 +1,19 @@
+import { TypeAnimation } from 'react-type-animation';
+import "../App.css"
+
 function About() {
     return (
         <div className="flex flex-col justify-center mt-20 mx-10">
             <div id="about-header">
-                <h1 className="font-sans font-bold text-5xl mb-10 tracking-normal">ABOUT US</h1>
+            <TypeAnimation
+            wrapper={"div"}
+            sequence={['About Us', 500]}
+            cursor={false}
+            speed={1}
+            style={{ fontSize: '3rem' }}
+            repeat={0}
+            className="type"
+            />
             </div>
             <div id="about-content">
                 <p>
