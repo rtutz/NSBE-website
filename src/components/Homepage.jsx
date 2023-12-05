@@ -23,7 +23,7 @@ function Homepage() {
             </div>
             <div className="flex flex-col mt-5 first-letter:font-sans text-palette-400 font-semibold">
                 <span className="font-thin tracking-wider">Toronto, Ontario</span>
-                <span className="font-thin tracking-wider mt-1">February 24 - 24, <span className="text-palette-100 font-thin tracking-wider">2024</span></span>
+                <span className="font-thin tracking-wider mt-1">February 24 - 25, <span className="text-palette-100 font-thin tracking-wider">2024</span></span>
                 <div className="mt-8 flex flex-col md:flex-row md:justify-left md:items-center gap-4 md:gap-9">
                     <ModernButton text={"Register Now"} link={googleFormToJoinUs} />
                     <ModernButtonInverted 
