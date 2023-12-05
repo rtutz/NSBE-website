@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 
 import data from '../assets/lottie_geographic_orange.json';
 import {ModernButton, ModernButtonInverted} from "./ModernButton";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const googleFormToJoinUs = "https://form.typeform.com/to/CIqjra2H"
 
@@ -11,8 +12,8 @@ function Homepage() {
       };
 
     return (
-        <>
-    <div id="#homepage" className="homepage flex flex-col md:flex-row justify-center items-center mt-20 mx-10">
+       
+    <div id="homepage" className="homepage flex flex-col md:flex-row justify-center items-center mt-20 mx-10">
         <div className="md:w-1/2 text-center md:text-left">
             <div className="text-6xl md:text-8xl font-sans font-bold text-palette-200">
                 <h2 className="hero glitch layers" data-text="NSBEHacks"><span>NSBEHacks</span></h2>
@@ -37,7 +38,6 @@ function Homepage() {
                     <Lottie animationData={data} style={style} />
                 </div>
             </div>
-        </>
 
     )
 }

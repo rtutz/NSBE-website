@@ -6,18 +6,27 @@ import { useMediaQuery } from 'react-responsive';
 import { MdMenu } from 'react-icons/md';
 
 const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("homepage");
+  const [activeLink, setActiveLink] = useState('homepage');
   const [isOpen, setIsOpen] = useState(false);
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
 
   const handleClick = (link) => {
     setActiveLink(link);
     setIsOpen(false);
+    smoothScrollTo(link);
   };
 
-  const getLinkStyle = (link) => activeLink === link ? 'border-b-2 border-palette-100 text-palette-800'
-    : 
-      'hover:border-b-2 hover:border-palette-100 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110';
+  const getLinkStyle = (link) => activeLink === link ? 
+    'border-b-2 border-palette-100 text-palette-800' : 
+    'hover:border-b-2 hover:border-palette-100 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110';
+
+  const smoothScrollTo = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
 
   return (
     <div className="navbar">
@@ -27,26 +36,15 @@ const NavBar = () => {
       {
         isSmallScreen ? (
           <>
-            {/* <button onClick={() => setIsOpen(!isOpen)} className="mr-5 block sm:hidden">
-              <MdMenu size={30} />
-            </button>
-            {isOpen && (
-              <div className="mobile-menu">
-                {['homepage', 'about', 'faq'].map((item, index) => (
-                  <Link key={index} to={`#${item}`} onClick={() => handleClick(item)}>
-                    <p className={getLinkStyle(item)}>{item}</p>
-                  </Link>
-                ))}
-              </div>
-            )} */}
           </>
         ) : (
           <div className='optionsNavigation text-palette-400'>
-            {['homepage', 'about', 'faq'].map((item, index) => (
-              <Link key={index} to={`#${item}`} onClick={() => handleClick(item)}>
-                <p className={getLinkStyle(item)}>{item}</p>
-              </Link>
-            ))}
+           {['homepage', 'about', 'faq'].map((item) => (
+             // eslint-disable-next-line react/jsx-key
+             <Link smooth to={`#${item}`} onClick={() => handleClick(item)}>
+              <p className={getLinkStyle(item)}>{item}</p>
+             </Link>
+           ))}
           </div>
         )
       }
