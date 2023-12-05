@@ -10,8 +10,8 @@ function Statistics() {
                 <p className="text-xl">applicants</p>
             </div>
             <div className="flex flex-col items-center order-2 sm:order-3">
-                <h1 className="font-sans font-black text-7xl mb-2">50+</h1>
-                <p className="text-xl">submissions</p>
+                <h1 className="font-sans font-black text-7xl mb-2">20+</h1>
+                <p className="text-xl">organizers</p>
             </div>
         </div>
     )
