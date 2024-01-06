@@ -112,3 +112,21 @@ img {
 .icon:hover {
   transform: scale(1.1) translateY(-10px);
 }
+
+.sponsor-bg {
+  border-radius: 5px;
+  background-color: #f2ac7d; 
+  border: 2px solid #f2ac7d;
+  background-image: linear-gradient(45deg, #f7a167 25%, transparent 25%), 
+                    linear-gradient(-45deg, #f2ac7d 25%, transparent 25%), 
+                    linear-gradient(45deg, transparent 75%, #ef9960 75%), 
+                    linear-gradient(-45deg, transparent 75%, #f2ac7d 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 15px, 15px -15px, -15px 0px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.sponsor-bg:hover {
+  background-size: 30px 30px;
+}

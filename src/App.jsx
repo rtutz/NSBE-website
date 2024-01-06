@@ -6,6 +6,7 @@ import Homepage from './components/Homepage';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Faq from './components/Faq';
+import Sponsor from './components/Sponsors'
 import {Element } from 'react-scroll';
 import { BrowserRouter as Router} from 'react-router-dom'
 
@@ -20,9 +21,13 @@ function App() {
         <Element name="about">
             <About/>
         </Element>
+        <Element name="sponsors">
+            <Sponsor/>
+        </Element>
         <Element name="faq">
             <Faq/>
         </Element>
+        
     </Router>
     </>
   )
