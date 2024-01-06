@@ -9,7 +9,12 @@ import 'react-multi-carousel/lib/styles.css'
 
 
 function OurTeam() {
+    const [name, setName] = useState(''); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    let imgList = [[Ronald, 'Ronald John Tutor'], [Ronald, 'A'], [Ronald, 'C'],[Ronald, 'D'], [Ronald, 'E'], [Ronald, 'F'],[Ronald, 'G'], [Ronald, 'H'], [Ronald, 'I']];
+
+
     const { ref, inView, entry } = useInView({
         threshold: 0.2,
       });
@@ -59,7 +64,9 @@ function OurTeam() {
                 repeat={0}
                 className="type"
             />}
+             <h1 className="h-8 mt-2 flex justify-center font-sans text-2xl">{name}</h1> {/* Reserve space for h1 with a fixed height */}
             </div>
+            
             {/* <Carousel
   additionalTransfrom={0}
   arrows
@@ -113,7 +120,7 @@ function OurTeam() {
 > */}
 <Carousel
   additionalTransfrom={0}
-  arrows
+  arrows={false}
   autoPlay
   autoPlaySpeed={1}
   centerMode={false}
@@ -163,17 +170,29 @@ function OurTeam() {
   shouldResetAutoplay
   showDots={false}
   sliderClass=""
-  slidesToSlide={5}
+  slidesToSlide={3}
   swipeable
   transitionDuration={5000}
 >
-{[...Array(10)].map((_, index) => (
+{/* {[...Array(10)].map((_, index) => (
         <div key={index} className='flex justify-center items-center'>
           <div className="w-full bg-white h-[0.10rem]" ></div>
           <img src={Ronald} alt="" />
           <div className="w-full bg-white h-[0.10rem]" ></div>
         </div>
-      ))}
+      ))} */}
+    {imgList.map((item, index) => (
+          <div 
+            key={index} 
+            className='flex justify-center items-center'
+            onMouseEnter={() => setName(item[1])} // Setting the state to the current image name
+            onMouseLeave={() => setName('')} // Clearing the state when mouse leaves the image
+          >
+            <div className="w-full bg-white h-[0.10rem]"></div>
+            <img src={item[0]} alt={item[1]} />
+            <div className="w-full bg-white h-[0.10rem]"></div>
+          </div>
+        ))}
 
 
     
