@@ -32,7 +32,7 @@ function Faq() {
             {inView && 
             <TypeAnimation
                 wrapper={"div"}
-                sequence={['FREQUENTLY ASKED QUESTIIONS', 500]}
+                sequence={['Frequently Asked Questions', 500]}
                 cursor={false}
                 speed={3}
                 style={{ fontSize: '2rem', fontWeight: '900', textAlign: 'center'}}

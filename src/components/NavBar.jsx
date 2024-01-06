@@ -39,7 +39,7 @@ const NavBar = () => {
           </>
         ) : (
           <div className='optionsNavigation text-palette-400'>
-           {['homepage', 'about', 'faq'].map((item) => (
+           {['homepage', 'about', 'FAQ', "sponsors"].map((item) => (
              // eslint-disable-next-line react/jsx-key
              <Link key={item} smooth to={`#${item}`} onClick={() => handleClick(item)}>
               <p className={getLinkStyle(item)}>{item}</p>
