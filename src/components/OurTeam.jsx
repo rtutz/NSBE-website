@@ -60,7 +60,7 @@ function OurTeam() {
                 className="type"
             />}
             </div>
-            <Carousel
+            {/* <Carousel
   additionalTransfrom={0}
   arrows
   autoPlaySpeed={3000}
@@ -110,12 +110,68 @@ function OurTeam() {
   sliderClass=""
   slidesToSlide={1}
   swipeable
+> */}
+<Carousel
+  additionalTransfrom={0}
+  arrows
+  autoPlay
+  autoPlaySpeed={1}
+  centerMode={false}
+  className=""
+  containerClass={'w-full'}
+  customTransition="transform 3000ms ease-in-out" 
+  dotListClass=""
+  draggable
+  focusOnSelect={false}
+  infinite
+  itemClass=""
+  keyBoardControl
+  minimumTouchDrag={80}
+  pauseOnHover={true}
+  renderArrowsWhenDisabled={false}
+  renderButtonGroupOutside={false}
+  renderDotsOutside={false}
+  responsive={{
+    desktop: {
+      breakpoint: {
+        max: 3000,
+        min: 1024
+      },
+      items: 5,
+      partialVisibilityGutter: 40
+    },
+    mobile: {
+      breakpoint: {
+        max: 464,
+        min: 0
+      },
+      items: 1,
+      partialVisibilityGutter: 30
+    },
+    tablet: {
+      breakpoint: {
+        max: 1024,
+        min: 464
+      },
+      items: 2,
+      partialVisibilityGutter: 30
+    }
+  }}
+  rewind={false}
+  rewindWithAnimation={false}
+  rtl={false}
+  shouldResetAutoplay
+  showDots={false}
+  sliderClass=""
+  slidesToSlide={5}
+  swipeable
+  transitionDuration={5000}
 >
 {[...Array(10)].map((_, index) => (
         <div key={index} className='flex justify-center items-center'>
-          <div className="w-1/2 bg-white h-[0.10rem]" ></div>
+          <div className="w-full bg-white h-[0.10rem]" ></div>
           <img src={Ronald} alt="" />
-          <div className="w-1/2 bg-white h-[0.10rem]" ></div>
+          <div className="w-full bg-white h-[0.10rem]" ></div>
         </div>
       ))}
 
