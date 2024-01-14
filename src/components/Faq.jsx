@@ -27,7 +27,7 @@ function Faq() {
 
 
     return (
-    <div id="faq" className="min-h-screen flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
+    <div id="FAQ" className="min-h-screen flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
         <div className=" mt-20">
             {inView && 
             <TypeAnimation
