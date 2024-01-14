@@ -2,6 +2,11 @@ import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer';
 import Ronald from '../assets/ronald.png';
+import Alex from '../assets/Alex.png';
+import Ayo from '../assets/Ayo.png';
+import Gen from '../assets/Gen.png';
+import Johannes from '../assets/johannes.png';
+import Shatho from '../assets/Shatho.png';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'
 
@@ -12,7 +17,7 @@ function OurTeam() {
     const [name, setName] = useState(''); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    let imgList = [[Ronald, 'Ronald John Tutor'], [Ronald, 'A'], [Ronald, 'C'],[Ronald, 'D'], [Ronald, 'E'], [Ronald, 'F'],[Ronald, 'G'], [Ronald, 'H'], [Ronald, 'I']];
+    let imgList = [ [Alex, 'Oluwasina (Alex) Olowookere'], [Ayo, 'Ayomide Ajayi'],[Gen, 'Genevieve Aguigwo'], [Johannes, 'Johannes Ehoule Toppe'],[Shatho, 'Shatho Nkwebi J Hubona'], [Ronald, 'Ronald John Tutor']];
 
 
     const { ref, inView, entry } = useInView({
@@ -170,7 +175,7 @@ function OurTeam() {
   shouldResetAutoplay
   showDots={false}
   sliderClass=""
-  slidesToSlide={3}
+  slidesToSlide={2}
   swipeable
   transitionDuration={5000}
 >

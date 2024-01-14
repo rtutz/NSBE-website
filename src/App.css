@@ -130,3 +130,15 @@ img {
 .sponsor-bg:hover {
   background-size: 30px 30px;
 }
+
+.volunteerText {
+  color: #878c9c;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  text-decoration:none;
+}
+
+.volunteerText:hover {
+  color: #a8b2d1;
+  transform: scale(1.05);
+}
