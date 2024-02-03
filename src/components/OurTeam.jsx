@@ -7,6 +7,8 @@ import Ayo from '../assets/Ayo.png';
 import Gen from '../assets/Gen.png';
 import Johannes from '../assets/johannes.png';
 import Shatho from '../assets/Shatho.png';
+import Ibuola from '../assets/ibuola.png';
+import Khushil from '../assets/Khushil.png';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'
 
@@ -17,7 +19,7 @@ function OurTeam() {
     const [name, setName] = useState(''); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    let imgList = [ [Alex, 'Oluwasina (Alex) Olowookere'], [Ayo, 'Ayomide Ajayi'],[Gen, 'Genevieve Aguigwo'], [Johannes, 'Johannes Ehoule Toppe'],[Shatho, 'Shatho Nkwebi J Hubona'], [Ronald, 'Ronald John Tutor']];
+    let imgList = [ [Alex, 'Oluwasina (Alex) Olowookere', "https://www.linkedin.com/in/oluwasina-olowookere-7bb2b4224/"], [Ayo, 'Ayomide Ajayi', "https://www.linkedin.com/in/ayomide-ajayi-julia/"],[Gen, 'Genevieve Aguigwo',"https://www.linkedin.com/in/genevieve-aguigwo/"], [Johannes, 'Johannes Ehoule Toppe',"https://www.linkedin.com/in/jtoppe/"],[Shatho, 'Shatho Nkwebi J Hubona', "https://www.linkedin.com/in/shatho-hubona/"], [Ronald, 'Ronald John Tutor', "https://www.linkedin.com/in/ronald-tutor/"],[Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/"],[Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/"]];
 
 
     const { ref, inView, entry } = useInView({
@@ -194,7 +196,20 @@ function OurTeam() {
             onMouseLeave={() => setName('')} // Clearing the state when mouse leaves the image
           >
             <div className="w-full bg-white h-[0.10rem]"></div>
-            <img src={item[0]} alt={item[1]} />
+ 
+            <img 
+              src={item[0]} 
+              alt={item[1]} 
+              style={{
+                cursor: 'pointer', 
+                transition: 'transform .2s',   // Adds a smooth transition
+                width: "50%"
+              }} 
+              onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} // Slightly increases size
+              onMouseOut={(e) => e.target.style.transform = 'scale(1)'} // Reverts to original size
+              onClick={() => window.open(item[2], '_blank')}
+            />
+
             <div className="w-full bg-white h-[0.10rem]"></div>
           </div>
         ))}

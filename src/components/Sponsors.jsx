@@ -12,7 +12,13 @@ import rotman from '../assets/rotman.png'
 import unity from '../assets/unity.svg'
 import wayfair from '../assets/wayfair.svg'
 import uoft_eng from '../assets/uoft_eng.png'
-import peel_plastics from '../assets/peel_plastics.png'
+
+import peel_plastics from '../assets/peel_plastics-removebg.png'
+
+import momentum from '../assets/momentum_2.png'
+import standout from '../assets/standout.png'
+import uoft_cs from '../assets/uoft_cs.png'
+import challenger from '../assets/challenger.png'
 
 function Sponsors() {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -56,16 +62,17 @@ function Sponsors() {
                 </div>
             </div>
 
-            <div className="sponsor-bg mb-4">
-    <img src={bfn} className="w-1/2 mx-auto py-4"/>
-</div>
+                        <div className="sponsor-bg mb-4">
+                <img src={bfn} className="w-1/2 mx-auto py-4"/>
+            </div>
             
             <div className="grid grid-cols-3 gap-4 w-full mb-4">
                 <div className="sponsor-bg flex items-center">
                     <img src={intuit} className="w-3/4 mx-auto py-4"/>
                 </div>
                 <div className="sponsor-bg">
-                    <img src={unity} className="w-3/4 mx-auto py-4"/>
+                <img src={peel_plastics} className="w-full mx-auto py-4 my-2"/>
+
                 </div>
                 <div className="sponsor-bg">
                 <img src={rotman} className="w-3/4 mx-auto py-4"/>
@@ -83,8 +90,23 @@ function Sponsors() {
                 </div>
               
             </div>
-            <div className="sponsor-bg">
-                    <img src={manulife} className="w-3/4 mx-auto py-4"/>
+            <div className="sponsor-bg mb-4 ">
+                    <img src={manulife} className="w-3/4 mx-auto"/>
+            </div>
+            <div className="sponsor-bg mb-4">
+                    <img src={momentum} className="w-5/6 mx-auto py-4"/>
+            </div>
+            <div className="grid grid-cols-3 gap-4 w-full mb-4">
+                <div className="sponsor-bg flex items-center">
+                    <img src={uoft_cs} className="w-3/4 mx-auto py-4"/>
+                </div>
+                <div className="sponsor-bg">
+                <img src={standout} className="w-1/2 mx-auto py-4 my-2"/>
+
+                </div>
+                <div className="sponsor-bg">
+                <img src={challenger} className="w-3/5 mx-auto py-4"/>
+                </div>
             </div>
             
         </div>
