@@ -32,7 +32,10 @@ const [activeLink, setActiveLink] = useState('homepage');
         <Element name="faq">
             <Faq setActiveLink={setActiveLink}/>
         </Element>
-        <OurTeam/>
+
+        <Element name="team">
+            <OurTeam setActiveLink={setActiveLink}/>
+        </Element>
     </Router>
     </>
   )

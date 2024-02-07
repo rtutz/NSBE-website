@@ -24,9 +24,12 @@ import 'react-multi-carousel/lib/styles.css'
 
 
 
-function OurTeam() {
+// eslint-disable-next-line react/prop-types
+function OurTeam({setActiveLink}) {
     const [name, setName] = useState([]); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    
 
     let imgList = [ [Lisa, "Lisa Mtui","https://www.linkedin.com/in/lisa-mtui/", "Sponsorship Lead"],
     [Alex, 'Oluwasina (Alex) Olowookere', "https://www.linkedin.com/in/oluwasina-olowookere-7bb2b4224/", "Sponsorship Lead"], 
@@ -51,6 +54,12 @@ function OurTeam() {
     const { ref, inView, entry } = useInView({
         threshold: 0.2,
       });
+
+    useEffect(() => {
+      if (inView) {
+        setActiveLink('team');
+      }
+    },[inView, setActiveLink])
 
     useEffect(() => {
         const checkScreenSize = () => {
@@ -85,7 +94,7 @@ function OurTeam() {
       };
     //   containerClass={'w-full'}
     return (
-        <div className="mb-20 flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
+        <div id="team" className="mb-20 flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
             <div className="mt-20 mb-10">
             {inView && 
             <TypeAnimation
