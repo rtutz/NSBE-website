@@ -26,7 +26,7 @@ function Homepage() {
                 <span className="font-thin tracking-wider mt-1">February 24 - 25, <span className="text-palette-100 font-thin tracking-wider">2024</span></span>
                 
                 <div className="mt-8 flex flex-col md:flex-row md:justify-left md:items-center gap-4 md:gap-9">
-                    <ModernButton text={"Register Now"} link={googleFormToJoinUs} />
+                    <ModernButton text={"Registration has closed!"} link={googleFormToJoinUs} />
 
                     <ModernButtonInverted 
                     text={"Sponsor Us"} 

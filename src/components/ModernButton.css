@@ -12,11 +12,11 @@
     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
   }
   
-.modern-button:hover {
+/* .modern-button:hover {
   background-color: #f2ac7d;
   color: black;
   transform: translateY(-2px);
-}
+} */
 
 .modern-button-inverted {
   display: inline-block;

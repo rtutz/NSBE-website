@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import './ModernButton.css'; // Import the CSS file for styling
 
  // eslint-disable-next-line react/prop-types
-const ModernButton = ({ text, link }) => {
+const ModernButton = ({ text }) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
+    
       <button className="modern-button">
         {text}
       </button>
-    </a>
+
   );
 };
 

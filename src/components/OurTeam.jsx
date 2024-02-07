@@ -1,6 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer';
+import Lisa from '../assets/Lisa.png';
 import Ronald from '../assets/ronald.png';
 import Alex from '../assets/Alex.png';
 import Ayo from '../assets/Ayo.png';
@@ -9,6 +10,14 @@ import Johannes from '../assets/johannes.png';
 import Shatho from '../assets/Shatho.png';
 import Ibuola from '../assets/ibuola.png';
 import Khushil from '../assets/Khushil.png';
+import Amazing from '../assets/Amazing.png';
+import Odosa from '../assets/Odosa.png';
+import Huda from '../assets/Huda.png';
+import Tanya from '../assets/Tanya.png';
+import Chelsea from '../assets/Chelsea.png';
+import Niki from '../assets/Niki.png';
+import Nathan from '../assets/Nathan.png';
+import Lama  from '../assets/Lama.png';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'
 
@@ -19,7 +28,16 @@ function OurTeam() {
     const [name, setName] = useState(''); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    let imgList = [ [Alex, 'Oluwasina (Alex) Olowookere', "https://www.linkedin.com/in/oluwasina-olowookere-7bb2b4224/"], [Ayo, 'Ayomide Ajayi', "https://www.linkedin.com/in/ayomide-ajayi-julia/"],[Gen, 'Genevieve Aguigwo',"https://www.linkedin.com/in/genevieve-aguigwo/"], [Johannes, 'Johannes Ehoule Toppe',"https://www.linkedin.com/in/jtoppe/"],[Shatho, 'Shatho Nkwebi J Hubona', "https://www.linkedin.com/in/shatho-hubona/"], [Ronald, 'Ronald John Tutor', "https://www.linkedin.com/in/ronald-tutor/"],[Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/"],[Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/"]];
+    let imgList = [ [Lisa, "Lisa Mtui","https://www.linkedin.com/in/lisa-mtui/"],[Alex, 'Oluwasina (Alex) Olowookere', "https://www.linkedin.com/in/oluwasina-olowookere-7bb2b4224/"], [Ayo, 'Ayomide Ajayi', "https://www.linkedin.com/in/ayomide-ajayi-julia/"],[Gen, 'Genevieve Aguigwo',"https://www.linkedin.com/in/genevieve-aguigwo/"], [Johannes, 'Johannes Ehoule Toppe',"https://www.linkedin.com/in/jtoppe/"],[Shatho, 'Shatho Nkwebi J Hubona', "https://www.linkedin.com/in/shatho-hubona/"], [Ronald, 'Ronald John Tutor', "https://www.linkedin.com/in/ronald-tutor/"],[Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/"],[Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/"], 
+    [Amazing, "Amazing Lawal", "https://www.linkedin.com/in/amazinglawal/"],
+    [Odosa, "Odosa (Sewell) Obasuyi", "https://www.linkedin.com/in/odosa-obasuyi/"],
+    [Huda, "Huda Musa", "https://www.linkedin.com/in/huda-musa/"],
+    [Tanya, "Tanya Allison", "https://www.linkedin.com/in/tanya-joelle-allison"],
+    [Chelsea, "Chelsea Muhwati", "https://www.linkedin.com/in/chelsea-muhwati-6705a0207/"],
+    [Niki, "Nikita Chiduku", "https://www.linkedin.com/in/nikita-c-a8b19155/overlay/photo/"],
+    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/"],
+    [Lama, "Lama Elfaki", "https://www.linkedin.com/in/lama-elfaki-991610206/"]
+  ];
 
 
     const { ref, inView, entry } = useInView({
