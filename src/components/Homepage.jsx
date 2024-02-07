@@ -1,19 +1,33 @@
 import Lottie from "lottie-react";
-
+import { useInView } from 'react-intersection-observer';
 import data from '../assets/lottie_geographic_orange.json';
+import { useEffect } from 'react';
 import {ModernButton, ModernButtonInverted} from "./ModernButton";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const googleFormToJoinUs = "https://form.typeform.com/to/CIqjra2H"
 const volunteerForm = "https://form.typeform.com/to/K43zdeYy"
-function Homepage() {
+
+// eslint-disable-next-line react/prop-types
+function Homepage({setActiveLink}) {
+    const { ref, inView } = useInView({
+      /* Optional options */
+      threshold: 0.2,
+    });
+  
+  
+    useEffect(() => {
+      if (inView) {
+        setActiveLink('homepage');
+      }
+    },[inView, setActiveLink])
+    
     const style = {
         height: 700
       };
 
     return (
        
-    <div id="homepage" className="homepage flex flex-col md:flex-row justify-center items-center mt-20 mx-10">
+    <div id="homepage" className="homepage flex flex-col md:flex-row justify-center items-center mt-20 mx-10" ref={ref}>
         <div className="md:w-1/2 text-center md:text-left">
             <div className="text-6xl md:text-8xl font-sans font-bold text-palette-200">
                 <h2 className="hero glitch layers" data-text="NSBEHacks"><span>NSBEHacks</span></h2>

@@ -20,11 +20,21 @@ import standout from '../assets/standout.png'
 import uoft_cs from '../assets/uoft_cs.png'
 import challenger from '../assets/challenger.png'
 
-function Sponsors() {
+// eslint-disable-next-line react/prop-types
+function Sponsors({setActiveLink}) {
+    const { ref, inView } = useInView({
+      /* Optional options */
+      threshold: 0.2,
+    });
+  
+  
+    useEffect(() => {
+      if (inView) {
+        setActiveLink('sponsors');
+      }
+    },[inView, setActiveLink])
     const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const { ref, inView, entry } = useInView({
-        threshold: 0.2,
-      });
+ 
 
     useEffect(() => {
         const checkScreenSize = () => {

@@ -1,11 +1,11 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../assets/nsbe-logo.png';
 import mlhLogo from '../assets/mlh-trust-badge-white-2024.png';
-import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-const NavBar = () => {
-  const [activeLink, setActiveLink] = useState('homepage');
+// eslint-disable-next-line react/prop-types
+const NavBar = ({activeLink, setActiveLink}) => {
+  
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
 
   const handleClick = (link) => {

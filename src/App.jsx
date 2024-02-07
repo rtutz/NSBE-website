@@ -11,24 +11,26 @@ import OurTeam from './components/OurTeam';
 import {Element } from 'react-scroll';
 import { BrowserRouter as Router} from 'react-router-dom'
 import Timer from './components/Timer';
+import { useState } from 'react';
 
 function App() {
+const [activeLink, setActiveLink] = useState('homepage');
   return (
     <>
     <Router>
-        <NavBar/>
+        <NavBar activeLink={activeLink} setActiveLink={setActiveLink}/>
         <Element name="homepage">
-            <Homepage/>
+            <Homepage setActiveLink={setActiveLink}/>
         </Element>
         <Timer/>
         <Element name="about">
-            <About/>
+            <About setActiveLink={setActiveLink}/>
         </Element>
         <Element name="sponsors">
-            <Sponsor/>
+            <Sponsor setActiveLink={setActiveLink}/>
         </Element>
         <Element name="faq">
-            <Faq/>
+            <Faq setActiveLink={setActiveLink}/>
         </Element>
         <OurTeam/>
     </Router>

@@ -4,14 +4,22 @@ import ContactUs from "./ContactUs";
 import { useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer';
 
-function Faq() {
+// eslint-disable-next-line react/prop-types
+function Faq({setActiveLink}) {
+    const { ref, inView } = useInView({
+      /* Optional options */
+      threshold: 0.2,
+    });
+  
+  
+    useEffect(() => {
+      if (inView) {
+        setActiveLink('FAQ');
+      }
+    },[inView, setActiveLink])
 
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    const { ref, inView, entry } = useInView({
-        /* Optional options */
-        threshold: 0.2,
-      });
 
     useEffect(() => {
         const checkScreenSize = () => {

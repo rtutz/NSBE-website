@@ -1,13 +1,21 @@
 import { TypeAnimation } from 'react-type-animation';
 import Statistics from './Statistics';
 import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
-const About = () => {
+// eslint-disable-next-line react/prop-types
+const About = ({setActiveLink}) => {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.2,
   });
 
+
+  useEffect(() => {
+    if (inView) {
+      setActiveLink('about');
+    }
+  },[inView, setActiveLink])
 
 
   return (
