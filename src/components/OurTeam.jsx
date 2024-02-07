@@ -25,7 +25,7 @@ import 'react-multi-carousel/lib/styles.css'
 
 
 // eslint-disable-next-line react/prop-types
-function OurTeam({setActiveLink}) {
+function OurCommittee({setActiveLink}) {
     const [name, setName] = useState([]); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -38,16 +38,16 @@ function OurTeam({setActiveLink}) {
     [Johannes, 'Johannes Ehoule Toppe',"https://www.linkedin.com/in/jtoppe/", "Marketing Lead"],
     [Shatho, 'Shatho Nkwebi J Hubona', "https://www.linkedin.com/in/shatho-hubona/", "Participant Outreach Lead"], 
     [Ronald, 'Ronald John Tutor', "https://www.linkedin.com/in/ronald-tutor/", "Website Lead"],
-    [Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/", "Sponsorship Team Member"],
-    [Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/", "Sponsorship Team Member"], 
-    [Amazing, "Amazing Lawal", "https://www.linkedin.com/in/amazinglawal/", "Commitee Member"],
-    [Odosa, "Odosa (Sewell) Obasuyi", "https://www.linkedin.com/in/odosa-obasuyi/", "Commitee Member"],
-    [Huda, "Huda Musa", "https://www.linkedin.com/in/huda-musa/", "Promotions Team Member"],
-    [Tanya, "Tanya Allison", "https://www.linkedin.com/in/tanya-joelle-allison", "Promotions Team Member"],
-    [Chelsea, "Chelsea Muhwati", "https://www.linkedin.com/in/chelsea-muhwati-6705a0207/", "Promotions Team Member"],
-    [Niki, "Nikita Chiduku", "https://www.linkedin.com/in/nikita-c-a8b19155/overlay/photo/", "Promotions Team Member"],
-    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/", "Promotions Team Member"],
-    [Lama, "Lama Elfaki", "https://www.linkedin.com/in/lama-elfaki-991610206/", "Promotions Team Member"]
+    [Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/", "Sponsorship Committee Member"],
+    [Lama, "Lama Elfaki", "https://www.linkedin.com/in/lama-elfaki-991610206/", "Promotions Committee Member"],
+    [Niki, "Nikita Chiduku", "https://www.linkedin.com/in/nikita-c-a8b19155/overlay/photo/", "Promotions Committee Member"],
+    [Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/", "Sponsorship Committee Member"], 
+    [Amazing, "Amazing Lawal", "https://www.linkedin.com/in/amazinglawal/", "Logistics Committee Member"],
+    [Odosa, "Odosa (Sewell) Obasuyi", "https://www.linkedin.com/in/odosa-obasuyi/", "Participant Outreach Committee Member"],
+    [Huda, "Huda Musa", "https://www.linkedin.com/in/huda-musa/", "Promotions Committee Member"],
+    [Tanya, "Tanya Allison", "https://www.linkedin.com/in/tanya-joelle-allison", "Promotions Committee Member"],
+    [Chelsea, "Chelsea Muhwati", "https://www.linkedin.com/in/chelsea-muhwati-6705a0207/", "Promotions Committee Member"],
+    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/", "Promotions Committee Member"]
   ];
 
 
@@ -57,7 +57,7 @@ function OurTeam({setActiveLink}) {
 
     useEffect(() => {
       if (inView) {
-        setActiveLink('team');
+        setActiveLink('committee');
       }
     },[inView, setActiveLink])
 
@@ -94,12 +94,12 @@ function OurTeam({setActiveLink}) {
       };
     //   containerClass={'w-full'}
     return (
-        <div id="team" className="mb-20 flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
+        <div id="committee" className="mb-20 flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
             <div className="mt-20 mb-10">
             {inView && 
             <TypeAnimation
                 wrapper={"div"}
-                sequence={['Our Team', 500]}
+                sequence={['Our Committee', 500]}
                 cursor={false}
                 speed={3}
                 style={{ fontSize: '2rem', fontWeight: '900', textAlign: 'center'}}
@@ -207,4 +207,4 @@ function OurTeam({setActiveLink}) {
     )
 }
 
-export default OurTeam;
+export default OurCommittee;
