@@ -25,18 +25,26 @@ import 'react-multi-carousel/lib/styles.css'
 
 
 function OurTeam() {
-    const [name, setName] = useState(''); // Initializing name state as empty
+    const [name, setName] = useState([]); // Initializing name state as empty
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    let imgList = [ [Lisa, "Lisa Mtui","https://www.linkedin.com/in/lisa-mtui/"],[Alex, 'Oluwasina (Alex) Olowookere', "https://www.linkedin.com/in/oluwasina-olowookere-7bb2b4224/"], [Ayo, 'Ayomide Ajayi', "https://www.linkedin.com/in/ayomide-ajayi-julia/"],[Gen, 'Genevieve Aguigwo',"https://www.linkedin.com/in/genevieve-aguigwo/"], [Johannes, 'Johannes Ehoule Toppe',"https://www.linkedin.com/in/jtoppe/"],[Shatho, 'Shatho Nkwebi J Hubona', "https://www.linkedin.com/in/shatho-hubona/"], [Ronald, 'Ronald John Tutor', "https://www.linkedin.com/in/ronald-tutor/"],[Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/"],[Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/"], 
-    [Amazing, "Amazing Lawal", "https://www.linkedin.com/in/amazinglawal/"],
-    [Odosa, "Odosa (Sewell) Obasuyi", "https://www.linkedin.com/in/odosa-obasuyi/"],
-    [Huda, "Huda Musa", "https://www.linkedin.com/in/huda-musa/"],
-    [Tanya, "Tanya Allison", "https://www.linkedin.com/in/tanya-joelle-allison"],
-    [Chelsea, "Chelsea Muhwati", "https://www.linkedin.com/in/chelsea-muhwati-6705a0207/"],
-    [Niki, "Nikita Chiduku", "https://www.linkedin.com/in/nikita-c-a8b19155/overlay/photo/"],
-    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/"],
-    [Lama, "Lama Elfaki", "https://www.linkedin.com/in/lama-elfaki-991610206/"]
+    let imgList = [ [Lisa, "Lisa Mtui","https://www.linkedin.com/in/lisa-mtui/", "Sponsorship Lead"],
+    [Alex, 'Oluwasina (Alex) Olowookere', "https://www.linkedin.com/in/oluwasina-olowookere-7bb2b4224/", "Sponsorship Lead"], 
+    [Ayo, 'Ayomide Ajayi', "https://www.linkedin.com/in/ayomide-ajayi-julia/", "Logistics Lead"],
+    [Gen, 'Genevieve Aguigwo',"https://www.linkedin.com/in/genevieve-aguigwo/", "Events Lead"], 
+    [Johannes, 'Johannes Ehoule Toppe',"https://www.linkedin.com/in/jtoppe/", "Marketing Lead"],
+    [Shatho, 'Shatho Nkwebi J Hubona', "https://www.linkedin.com/in/shatho-hubona/", "Participant Outreach Lead"], 
+    [Ronald, 'Ronald John Tutor', "https://www.linkedin.com/in/ronald-tutor/", "Website Lead"],
+    [Ibuola, "Ibuola Ayanlowo","https://www.linkedin.com/in/ibuola-ayanlowo/", "Sponsorship Team Member"],
+    [Khushil,"Khushil Nagda","https://www.linkedin.com/in/khushil-nagda/", "Sponsorship Team Member"], 
+    [Amazing, "Amazing Lawal", "https://www.linkedin.com/in/amazinglawal/", "Commitee Member"],
+    [Odosa, "Odosa (Sewell) Obasuyi", "https://www.linkedin.com/in/odosa-obasuyi/", "Commitee Member"],
+    [Huda, "Huda Musa", "https://www.linkedin.com/in/huda-musa/", "Promotions Team Member"],
+    [Tanya, "Tanya Allison", "https://www.linkedin.com/in/tanya-joelle-allison", "Promotions Team Member"],
+    [Chelsea, "Chelsea Muhwati", "https://www.linkedin.com/in/chelsea-muhwati-6705a0207/", "Promotions Team Member"],
+    [Niki, "Nikita Chiduku", "https://www.linkedin.com/in/nikita-c-a8b19155/overlay/photo/", "Promotions Team Member"],
+    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/", "Promotions Team Member"],
+    [Lama, "Lama Elfaki", "https://www.linkedin.com/in/lama-elfaki-991610206/", "Promotions Team Member"]
   ];
 
 
@@ -89,60 +97,16 @@ function OurTeam() {
                 repeat={0}
                 className="type"
             />}
-             <h1 className="h-8 mt-2 flex justify-center font-sans text-2xl">{name}</h1> {/* Reserve space for h1 with a fixed height */}
+             <div className='flex flex-col justify-center items-center'>
+             <div className="h-8 mt-2 flex justify-center font-sans text-2xl">{name[0]}</div>
+
+
+              <div className='h-8 flex justify-center text-md'>{name[1]}</div>
+             </div>
+             
             </div>
             
-            {/* <Carousel
-  additionalTransfrom={0}
-  arrows
-  autoPlaySpeed={3000}
-  centerMode={false}
-  className=""
-  containerClass={'w-full'}  
-  dotListClass="custom-dot-list-style"
-  draggable
-  focusOnSelect={false}
-  infinite
-  itemClass=""
-  keyBoardControl
-  minimumTouchDrag={80}
-  pauseOnHover
-  renderArrowsWhenDisabled={false}
-  renderButtonGroupOutside={false}
-  responsive={{
-    desktop: {
-      breakpoint: {
-        max: 3000,
-        min: 1024
-      },
-      items: 5,
-      partialVisibilityGutter: 40
-    },
-    mobile: {
-      breakpoint: {
-        max: 464,
-        min: 0
-      },
-      items: 1,
-      partialVisibilityGutter: 30
-    },
-    tablet: {
-      breakpoint: {
-        max: 1024,
-        min: 464
-      },
-      items: 2,
-      partialVisibilityGutter: 30
-    }
-  }}
-  rewind={false}
-  rewindWithAnimation={false}
-  rtl={false}
-  shouldResetAutoplay
-  sliderClass=""
-  slidesToSlide={1}
-  swipeable
-> */}
+          
 <Carousel
   additionalTransfrom={0}
   arrows={false}
@@ -199,19 +163,12 @@ function OurTeam() {
   swipeable
   transitionDuration={5000}
 >
-{/* {[...Array(10)].map((_, index) => (
-        <div key={index} className='flex justify-center items-center'>
-          <div className="w-full bg-white h-[0.10rem]" ></div>
-          <img src={Ronald} alt="" />
-          <div className="w-full bg-white h-[0.10rem]" ></div>
-        </div>
-      ))} */}
     {imgList.map((item, index) => (
           <div 
             key={index} 
             className='flex justify-center items-center'
-            onMouseEnter={() => setName(item[1])} // Setting the state to the current image name
-            onMouseLeave={() => setName('')} // Clearing the state when mouse leaves the image
+            onMouseEnter={() => setName([item[1], item[3]])} // Setting the state to the current image name
+            onMouseLeave={() => setName(["",""])} // Clearing the state when mouse leaves the image
           >
             <div className="w-full bg-white h-[0.10rem]"></div>
  
