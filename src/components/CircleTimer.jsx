@@ -1,6 +1,5 @@
-import React from 'react';
-
-const CircleNumber = ({ number, totalDots, dotsCovered, dotSize }) => {
+// eslint-disable-next-line react/prop-types
+const CircleNumber = ({ number, totalDots, dotsCovered, dotSize, units }) => {
     // Calculate angle increment for each dot
     const angleIncrement = (2 * Math.PI) / totalDots;
 
@@ -22,22 +21,25 @@ const CircleNumber = ({ number, totalDots, dotsCovered, dotSize }) => {
     const fontSize =  60;
 
 
-  return (
-    <svg width="300" height="300">
-      {dots.map(({ x, y }, index) => (
-        <circle
-          key={index}
-          cx={x}
-          cy={y}
-          r={dotSize} // Dot radius
-          fill={index < dotsCovered && index >= 0 ? '#f2ac7d' : '#878c9c'}
-        />
-      ))}
-      <text x={centerX} y={centerY + (fontSize / 3)} textAnchor="middle" className='text-6xl text-white' fill='#FFFFFF'>
-        {number}
-      </text>
-    </svg>
-  );
+    return (
+      <div className="flex flex-col justify-center items-center">
+        <svg width="100%" height="100%" viewBox="0 0 300 300">
+        {dots.map(({ x, y }, index) => (
+          <circle
+            key={index}
+            cx={x}
+            cy={y}
+            r={dotSize} // Dot radius
+            fill={index < dotsCovered && index >= 0 ? '#f26b35' : '#878c9c'}
+          />
+        ))}
+        <text x={centerX} y={centerY + (fontSize / 3)} textAnchor="middle" className='text-6xl font-black' fill='#FFFFFF'>
+          {number}
+        </text>
+      </svg>
+      <h3 className="text-lg">{units}</h3>
+      </div>
+    );
 };
 
 export default CircleNumber;

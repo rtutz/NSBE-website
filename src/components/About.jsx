@@ -3,12 +3,12 @@ import Statistics from './Statistics';
 import { useInView } from 'react-intersection-observer';
 
 const About = () => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0.2,
   });
 
-  console.log(inView);
+
 
   return (
     <div id="about" className="flex min-h-screen flex-col items-center justify-center py-30 About" ref={ref}>
