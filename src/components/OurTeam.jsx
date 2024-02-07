@@ -57,7 +57,7 @@ function OurCommittee({setActiveLink}) {
 
     useEffect(() => {
       if (inView) {
-        setActiveLink('committee');
+        setActiveLink('team');
       }
     },[inView, setActiveLink])
 
@@ -94,7 +94,7 @@ function OurCommittee({setActiveLink}) {
       };
     //   containerClass={'w-full'}
     return (
-        <div id="committee" className="mb-20 flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
+        <div id="team" className="mb-20 flex flex-col items-center justify-center py-30 w-4/5 mx-auto"  ref={ref}>
             <div className="mt-20 mb-10">
             {inView && 
             <TypeAnimation
