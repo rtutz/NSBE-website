@@ -186,9 +186,14 @@ function OurCommittee({setActiveLink}) {
               alt={item[1]} 
               style={{
                 cursor: 'pointer', 
-                transition: 'transform .2s',   // Adds a smooth transition
-                width: "50%"
+                transition: 'transform 0.2s',   // Smooth transition for transform
+                width: "50%",
+                // Add a scale effect on hover
+                ':hover': {
+                  transform: 'scale(1.4)'  // Scale up by 10%
+                }
               }} 
+
               onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'} // Slightly increases size
               onMouseOut={(e) => e.target.style.transform = 'scale(1)'} // Reverts to original size
               onClick={() => window.open(item[2], '_blank')}
