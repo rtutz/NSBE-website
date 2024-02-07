@@ -3,16 +3,13 @@ import logo from '../assets/nsbe-logo.png';
 import mlhLogo from '../assets/mlh-trust-badge-white-2024.png';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { MdMenu } from 'react-icons/md';
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('homepage');
-  const [isOpen, setIsOpen] = useState(false);
   const isSmallScreen = useMediaQuery({ query: '(max-width: 600px)' });
 
   const handleClick = (link) => {
     setActiveLink(link);
-    setIsOpen(false);
     smoothScrollTo(link);
   };
 
