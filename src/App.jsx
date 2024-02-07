@@ -10,6 +10,7 @@ import Sponsor from './components/Sponsors';
 import OurTeam from './components/OurTeam';
 import {Element } from 'react-scroll';
 import { BrowserRouter as Router} from 'react-router-dom'
+import Timer from './components/Timer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Element name="homepage">
             <Homepage/>
         </Element>
+        <Timer/>
         <Element name="about">
             <About/>
         </Element>
