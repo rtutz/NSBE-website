@@ -20,7 +20,10 @@ Got questions, cool ideas, or just want to chat? We're all ears! Whether it's a 
             </a>
             <a href="https://www.linkedin.com/company/nsbehacks-uoft/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className='icon' color='#f2ac7d' icon={faLinkedin}  size='2xl'/></a>
+            <a href="mailto:hello@nsbehacksuoft.ca">
             <FontAwesomeIcon className='icon' color='#f2ac7d' icon={faEnvelope}  size='2xl'/>
+
+            </a>
             </div>
         </div>
     )
