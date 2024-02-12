@@ -18,6 +18,7 @@ import Chelsea from '../assets/Chelsea.png';
 import Niki from '../assets/Niki.png';
 import Nathan from '../assets/Nathan.png';
 import Lama  from '../assets/Lama.png';
+import Nas  from '../assets/Nas.png';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'
 
@@ -47,7 +48,8 @@ function OurCommittee({setActiveLink}) {
     [Huda, "Huda Musa", "https://www.linkedin.com/in/huda-musa/", "Promotions Committee Member"],
     [Tanya, "Tanya Allison", "https://www.linkedin.com/in/tanya-joelle-allison", "Promotions Committee Member"],
     [Chelsea, "Chelsea Muhwati", "https://www.linkedin.com/in/chelsea-muhwati-6705a0207/", "Promotions Committee Member"],
-    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/", "Promotions Committee Member"]
+    [Nathan, "Nathan Cibonga", "https://www.linkedin.com/in/nathan-cibonga-mugabe/", "Promotions Committee Member"],
+    [Nas, "Nasrudeen Oladimeji", "https://www.linkedin.com/in/nasrudeen-oladimeji-9990431a5/", "Participant Outreach Committee Member"]
   ];
 
 
