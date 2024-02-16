@@ -3,11 +3,9 @@
 Welcome to the official repository for the 2024 NSBEHacks Website!
 
 ## Status
-🚧 **Work in Progress** 🚧
+📦 **LIVE!** 📦
 
-The website is currently under development, and we appreciate your patience as we work on bringing you an amazing experience. 
-
-The most recent version can be viewed at [https://rtutz.github.io/NSBE-website/](https://rtutz.github.io/NSBE-website/).
+The website is live! Please visit us @ [nsbehacksuoft.ca](https://nsbehacksuoft.ca/).
 
 ## About NSBEHacks
 NSBEHacks if National Society for Black Engineers (NSBE) UofT Chapter's annual hackathon, bringing together students, professionals, and enthusiasts passionate about technology, innovation, and diversity in STEM.
